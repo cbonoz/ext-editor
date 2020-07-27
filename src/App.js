@@ -68,12 +68,21 @@ function App() {
               height="28"
             /> */}
           {!isEmpty(components) && (
-            <button
-              className="button is-success download-button navbar-item"
-              onClick={download}
-            >
-              Download layout
-            </button>
+            <span>
+              <button
+                className="button is-success download-button navbar-item"
+                onClick={download}
+              >
+                Download layout
+              </button>
+              &nbsp;
+              <button
+                className="button is-danger download-button navbar-item"
+                onClick={() => setComponents([])}
+              >
+                Start over
+              </button>
+            </span>
           )}
         </div>
       </nav>

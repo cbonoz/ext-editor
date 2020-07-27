@@ -37,6 +37,10 @@ code {
   margin-left: 25px;
 }
 
+.navbar-item {
+  display: inline-flex !important;
+}
+
 .component-sidebar {
   border-right: 1px solid black;
   height: 100vh;
